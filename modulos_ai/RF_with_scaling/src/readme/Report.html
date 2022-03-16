@@ -1,0 +1,526 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="bokeh-2.4.1.min.js"></script>
+  <script src="bokeh-tables-2.4.1.min.js"></script>
+  <script src="bokeh-widgets-2.4.1.min.js"></script>
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src='logo.svg' height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link larger_text" href="Report.html">Insights<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <div class="container content_div">
+    <div class="row">
+      <div>
+        <h2>Solution Insights</h2>
+        <p>
+          Below we provide <a href='#fig'>figures</a> and <a href='#ex'>example predictions</a> 
+          to help assess the performance of your solution.
+        </p>
+        <a id="fig"></a>
+          <h3>Figures</h3>
+        <p>The figures are generated based on the prediction and labels from the validation dataset.
+</p>
+</a>
+<table>
+<tr>
+<td width='80%'><img src='../imgs/ROCCurve_graph_0.svg'alt='ROCCurve_graph_0.svg'></td><td width='20%'><p>This figure shows the receiver operating characteristic curve (ROC), which can be computed for models that output probabilities. It is created by plotting the true positive rate (TPR) vs the false positive rate (FPR) at various threshold settings. The annotated green points show the corresponding FPR-TPR combinations for specific threshold values. Here, the threshold probability applies to the probability of the positive class (i.e. samples are positive for positive class probabilities above the threshold). The dotted line shows the ROC Curve for a random classifier.</p></td></tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container content_div">
+    <div class='row'>
+      <div>
+        <a id='ex'>
+          <h3>Prediction Examples</h3>
+          <p>
+            The following examples were extracted from the validation
+            dataset. We show samples for which the solution performs well
+            and samples for which the solution performs poorly.
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='container content_div'>
+<div class='row'>
+<div>
+<p>For the following 10 samples, the table below lists the predicted probabilities. Note that categories are lexicographically sorted (see the 'Info' tab for the list of categories) and that the probabilities may not add up to 1 due to rounding errors:</p>
+</div>
+</div>
+</div>
+<div class='table-responsive container content_div'>
+<div class='row'>
+<div>
+<table class='table'>
+<tr class='table_head_grey'>
+<th>Label</th>
+<th>Prediction</th>
+<th>gi</th>
+<th>gk</th>
+<th>gr</th>
+<th>gw1</th>
+<th>gw2</th>
+<th>gz</th>
+<th>ij</th>
+<th>ik</th>
+<th>iw1</th>
+<th>iw2</th>
+<th>iz</th>
+<th>jw1</th>
+<th>jw2</th>
+<th>kw1</th>
+<th>kw2</th>
+<th>ri</th>
+<th>rw1</th>
+<th>rw2</th>
+<th>rz</th>
+<th>ug</th>
+<th>ui</th>
+<th>uj</th>
+<th>uk</th>
+<th>ur</th>
+<th>uw1</th>
+<th>uw2</th>
+<th>uz</th>
+<th>w1w2</th>
+<th>zj</th>
+<th>zk</th>
+<th>zw1</th>
+<th>zw2</th>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.6137</b>, 0.3863]</td>
+<td> 2.5916</td>
+<td> 4.50997</td>
+<td> 1.5303</td>
+<td> 3.85181</td>
+<td> 3.81081</td>
+<td> 3.0146</td>
+<td> 0.96125</td>
+<td> 1.91837</td>
+<td> 1.26021</td>
+<td> 1.21921</td>
+<td> 0.423</td>
+<td> 0.298957</td>
+<td> 0.257962</td>
+<td>-0.658167</td>
+<td>-0.699162</td>
+<td> 1.0613</td>
+<td> 2.32151</td>
+<td> 2.28051</td>
+<td> 1.4843</td>
+<td>-0.0636</td>
+<td> 2.528</td>
+<td> 3.48925</td>
+<td> 4.44637</td>
+<td> 1.4667</td>
+<td> 3.78821</td>
+<td> 3.74721</td>
+<td> 2.951</td>
+<td>-0.040995</td>
+<td> 0.53825</td>
+<td> 1.49537</td>
+<td> 0.837207</td>
+<td> 0.796212</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.9027</b>, 0.0973]</td>
+<td> 2.3807</td>
+<td> 4.94374</td>
+<td> 1.9181</td>
+<td> 4.72281</td>
+<td> 4.88666</td>
+<td> 3.3047</td>
+<td> 1.32358</td>
+<td> 2.56304</td>
+<td> 2.34211</td>
+<td> 2.50596</td>
+<td> 0.924</td>
+<td> 1.01853</td>
+<td> 1.18237</td>
+<td>-0.220928</td>
+<td>-0.057081</td>
+<td> 0.4626</td>
+<td> 2.80471</td>
+<td> 2.96855</td>
+<td> 1.3866</td>
+<td> 0.0433</td>
+<td> 2.424</td>
+<td> 3.74758</td>
+<td> 4.98704</td>
+<td> 1.9614</td>
+<td> 4.76611</td>
+<td> 4.92995</td>
+<td> 3.348</td>
+<td> 0.163847</td>
+<td> 0.399582</td>
+<td> 1.63904</td>
+<td> 1.41811</td>
+<td> 1.58196</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.7685</b>, 0.2315]</td>
+<td> 2.7414</td>
+<td> 4.40138</td>
+<td> 1.7201</td>
+<td> 4.94801</td>
+<td> 5.21119</td>
+<td> 3.4054</td>
+<td> 0.771506</td>
+<td> 1.65998</td>
+<td> 2.20661</td>
+<td> 2.46979</td>
+<td> 0.664</td>
+<td> 1.43511</td>
+<td> 1.69828</td>
+<td> 0.546636</td>
+<td> 0.809809</td>
+<td> 1.0213</td>
+<td> 3.22791</td>
+<td> 3.49109</td>
+<td> 1.6853</td>
+<td> 3.8286</td>
+<td> 6.57</td>
+<td> 7.34151</td>
+<td> 8.22998</td>
+<td> 5.5487</td>
+<td> 8.77661</td>
+<td> 9.03979</td>
+<td> 7.234</td>
+<td> 0.263173</td>
+<td> 0.107506</td>
+<td> 0.995978</td>
+<td> 1.54261</td>
+<td> 1.80579</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.9068</b>, 0.0932]</td>
+<td> 2.0874</td>
+<td> 3.66578</td>
+<td>-0.6639</td>
+<td> 3.49532</td>
+<td> 3.44782</td>
+<td> 2.6544</td>
+<td> 0.638258</td>
+<td> 1.57838</td>
+<td> 1.40792</td>
+<td> 1.36042</td>
+<td> 0.567</td>
+<td> 0.769662</td>
+<td> 0.722161</td>
+<td>-0.17046</td>
+<td>-0.217961</td>
+<td> 2.7513</td>
+<td> 4.15922</td>
+<td> 4.11172</td>
+<td> 3.3183</td>
+<td> 1.3096</td>
+<td> 3.397</td>
+<td> 4.03526</td>
+<td> 4.97538</td>
+<td> 0.6457</td>
+<td> 4.80492</td>
+<td> 4.75742</td>
+<td> 3.964</td>
+<td>-0.047501</td>
+<td> 0.071258</td>
+<td> 1.01138</td>
+<td> 0.84092</td>
+<td> 0.793419</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_normal'>[<b>0.6959</b>, 0.3041]</td>
+<td> 2.7172</td>
+<td> 3.90288</td>
+<td> 1.0729</td>
+<td> 4.62784</td>
+<td> 4.8343</td>
+<td> 3.2212</td>
+<td>-0.008595</td>
+<td> 1.18568</td>
+<td> 1.91064</td>
+<td> 2.1171</td>
+<td> 0.504</td>
+<td> 1.91924</td>
+<td> 2.1257</td>
+<td> 0.724962</td>
+<td> 0.931422</td>
+<td> 1.6443</td>
+<td> 3.55494</td>
+<td> 3.7614</td>
+<td> 2.1483</td>
+<td>-0.1762</td>
+<td> 2.541</td>
+<td> 2.5324</td>
+<td> 3.72668</td>
+<td> 0.8967</td>
+<td> 4.45164</td>
+<td> 4.6581</td>
+<td> 3.045</td>
+<td> 0.20646</td>
+<td>-0.512595</td>
+<td> 0.681678</td>
+<td> 1.40664</td>
+<td> 1.6131</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.8000</b>, 0.2000]</td>
+<td> 3.576</td>
+<td> 4.54048</td>
+<td> 1.6687</td>
+<td> 5.23759</td>
+<td> 5.30682</td>
+<td> 4.237</td>
+<td> 0.10807</td>
+<td> 0.964479</td>
+<td> 1.66159</td>
+<td> 1.73082</td>
+<td> 0.661</td>
+<td> 1.55352</td>
+<td> 1.62275</td>
+<td> 0.697109</td>
+<td> 0.766342</td>
+<td> 1.9073</td>
+<td> 3.56889</td>
+<td> 3.63812</td>
+<td> 2.5683</td>
+<td> 0.451</td>
+<td> 4.027</td>
+<td> 4.13507</td>
+<td> 4.99148</td>
+<td> 2.1197</td>
+<td> 5.68859</td>
+<td> 5.75782</td>
+<td> 4.688</td>
+<td> 0.069233</td>
+<td>-0.55293</td>
+<td> 0.303479</td>
+<td> 1.00059</td>
+<td> 1.06982</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_normal'>[<b>0.9342</b>, 0.0658]</td>
+<td> 3.0852</td>
+<td> 4.1406</td>
+<td> 1.0556</td>
+<td> 3.7533</td>
+<td> 3.70567</td>
+<td> 3.5102</td>
+<td> 0.035076</td>
+<td> 1.0554</td>
+<td> 0.668104</td>
+<td> 0.620472</td>
+<td> 0.425</td>
+<td> 0.633028</td>
+<td> 0.585396</td>
+<td>-0.387291</td>
+<td>-0.434923</td>
+<td> 2.0296</td>
+<td> 2.6977</td>
+<td> 2.65007</td>
+<td> 2.4546</td>
+<td>-0.9742</td>
+<td> 2.111</td>
+<td> 2.14608</td>
+<td> 3.16639</td>
+<td> 0.0814</td>
+<td> 2.7791</td>
+<td> 2.73147</td>
+<td> 2.536</td>
+<td>-0.047632</td>
+<td>-0.389924</td>
+<td> 0.630395</td>
+<td> 0.243104</td>
+<td> 0.195472</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_normal'>[0.1356, <b>0.8644</b>]</td>
+<td> 1.7349</td>
+<td> 3.89376</td>
+<td> 0.9001</td>
+<td> 5.07228</td>
+<td> 5.40609</td>
+<td> 2.3689</td>
+<td> 1.29023</td>
+<td> 2.15886</td>
+<td> 3.33738</td>
+<td> 3.67119</td>
+<td> 0.634</td>
+<td> 2.04716</td>
+<td> 2.38096</td>
+<td> 1.17853</td>
+<td> 1.51233</td>
+<td> 0.8348</td>
+<td> 4.17218</td>
+<td> 4.50599</td>
+<td> 1.4688</td>
+<td> 1.2961</td>
+<td> 3.031</td>
+<td> 4.32123</td>
+<td> 5.18986</td>
+<td> 2.1962</td>
+<td> 6.36838</td>
+<td> 6.70219</td>
+<td> 3.665</td>
+<td> 0.333805</td>
+<td> 0.656227</td>
+<td> 1.52486</td>
+<td> 2.70338</td>
+<td> 3.03719</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_normal'>[<b>0.5342</b>, 0.4658]</td>
+<td> 1.0451</td>
+<td> 4.69868</td>
+<td> 0.1326</td>
+<td> 5.66269</td>
+<td> 6.32597</td>
+<td> 1.7421</td>
+<td> 2.25932</td>
+<td> 3.65358</td>
+<td> 4.6176</td>
+<td> 5.28087</td>
+<td> 0.697</td>
+<td> 2.35827</td>
+<td> 3.02154</td>
+<td> 0.964015</td>
+<td> 1.62729</td>
+<td> 0.9125</td>
+<td> 5.53009</td>
+<td> 6.19337</td>
+<td> 1.6095</td>
+<td> 1.1949</td>
+<td> 2.24</td>
+<td> 4.49932</td>
+<td> 5.89358</td>
+<td> 1.3275</td>
+<td> 6.85759</td>
+<td> 7.52087</td>
+<td> 2.937</td>
+<td> 0.663271</td>
+<td> 1.56232</td>
+<td> 2.95658</td>
+<td> 3.9206</td>
+<td> 4.58387</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_normal'>[0.2452, <b>0.7548</b>]</td>
+<td> 1.9349</td>
+<td> 5.06195</td>
+<td> 0.9014</td>
+<td> 6.0849</td>
+<td> 6.79809</td>
+<td> 2.7999</td>
+<td> 2.38389</td>
+<td> 3.12705</td>
+<td> 4.15</td>
+<td> 4.86319</td>
+<td> 0.865</td>
+<td> 1.76611</td>
+<td> 2.47929</td>
+<td> 1.02296</td>
+<td> 1.73614</td>
+<td> 1.0335</td>
+<td> 5.1835</td>
+<td> 5.89669</td>
+<td> 1.8985</td>
+<td>-0.9689</td>
+<td> 0.966</td>
+<td> 3.34989</td>
+<td> 4.09305</td>
+<td>-0.0675</td>
+<td> 5.116</td>
+<td> 5.82919</td>
+<td> 1.831</td>
+<td> 0.713182</td>
+<td> 1.51889</td>
+<td> 2.26205</td>
+<td> 3.285</td>
+<td> 3.99819</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<br>
+
+  <br><br>
+
+  <footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

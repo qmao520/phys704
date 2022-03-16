@@ -1,0 +1,232 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src="logo.svg" height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="Report.html">Insights</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook<span class="sr-only">(current)</span></a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<div class="container content_div">
+  <div class="row">
+    <div style="height:0.5em;font-size:0.5em;">&nbsp;</div>
+      <h2 id="native_python_scripts">Python prediction scripts / jupyter notebook</h2>
+      <p>
+        Assuming that you installed the requirements (see
+        <a href="solution_deployment_python_scripts.html">Python prediction scripts / jupyter notebook installation</a>) and
+        your virtual environment is activated, you can run
+        any of the following scripts:
+      </p>
+      <p>
+        <table>
+          <tr class ="table_head_grey">
+            <td class="center-left"><b>Name</b></td>
+            <td class="center-left"><b>Description</b></td>
+            <td class="center-left"><b>Availability</b></td>
+          </tr>
+          <tr>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                <b>batch client</b>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+              <p>
+                The script <code>batch_client.py</code> makes inference on multiple samples at once.
+                The input is in the same format as the dataset that is uploaded to the platform,
+                i.e. a <code>csv</code> file or a <code>tar</code> file containing the actual data and the file called <code>dataset_structure.json</code>.
+                An example input for the batch client can be found in the <code>src/sample_dataset</code> folder.
+                The code to execute the batch client is:
+              </p>
+                <pre class="code"><code class="language-bash">python batch_client.py "path to your dataset .csv or .tar file"</code></pre>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                Classification and regression workflows, which do not output
+                probabilities.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                <b>online client</b>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+              <p>
+                The script <code>online_client.py</code> performs inference on a single sample. The data needs
+                to be provided as a <code>json</code>. Data, that is not json-serializable, needs to be
+                saved in files whose paths need to be included in the input <code>json</code>. The
+                <code>online_client.py</code> script contains an example input. 
+                The code to execute the online client is:
+              </p>
+                <pre class="code"><code class="language-bash">python online_client.py</code></pre>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                All workflows.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                <b>jupyter notebook</b>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+              <p>
+                The jupyter notebook <code>Solution.ipynb</code> can be used to execute both the online client
+                and the batch client. Additionally, it provides some basic visualizations of the input data
+                and the predictions. Note that <code>jupyter</code> is not installed automatically, as it is
+                not required to run the solution. Make sure you perform the following steps before you
+                execute the jupyter notebook:
+              </p>
+                <pre class="code"><code class="language-bash">pip install jupyter
+python -m ipykernel install --user --name="replace-name-of-your-env-here"</code></pre>
+              <p>
+                The jupyter notebook can then be started with:
+              </p>
+                <pre class="code"><code class="language-bash">jupyter notebook</code></pre>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                Classification and regression workflows, which do not output
+                probabilities.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                <b>forecast client</b>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+              <p>
+                The script <code>forecast_client.py</code> is used for time series forecasting.
+                It accepts multiple samples as input, but only makes one forecast (which can be
+                multiple time steps depending on the workflow settings). You need to provide
+                multiple samples because you need to include information on the past which are
+                used for forecasting. The number of required samples depends on your time 
+                series settings.
+                The code to execute the forecast client is:
+              </p>
+                <pre class="code"><code class="language-bash">python forecast_client.py</code></pre>
+            
+                <p>
+                  The forecast client has the following requirements on the input data:
+                </p>
+                  <ul>
+                    <li>
+                      The input samples have to be sorted in time. The oldest samples should be listed first,
+                      the most recent sample should be listed last.
+                    </li>
+                    <li>
+                      The number of input samples must be at least <code>lag + 1</code>, where <code>lag</code>
+                      is the parameter that was specified on the platform when the workflow was created.
+                    </li>
+                    <li>
+                      The input dictionary must contain either a list of scalar values or a list of paths for
+                      each node.
+                    </li>
+                  </ul>
+                <p>
+                  An example input for the forecast client can be found in the script <code>forecast_client.py</code>
+                  itself.
+                </p>
+              </div>
+            </td>
+            <td class="top-left">
+              <div class="cell-with-margin">
+                Time series workflows.
+              </div>
+            </td>
+          </tr>
+        </table>
+      </p>
+      <p>
+        <br /><br />
+      </p>
+    </div>
+  </div>
+
+<footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
+
+<style lang="scss" scoped>
+    .cell-with-margin {
+      margin: 10px
+    }
+</style>
+  

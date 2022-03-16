@@ -1,0 +1,2166 @@
+{
+    "__version__": 0.1,
+    "history_states": [
+        {
+            "entry_type": "DSSF saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Read DSSF and initialize Saver.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv"
+                }
+            },
+            "current_nodes": [],
+            "node_type_dssf": {},
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {},
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes added",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Saving component train_qso_final.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "heuristics saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Computing node type heuristics.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {},
+            "node_types_possible": {
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "user input saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Mock user selection by setting selections to defaults.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes generated",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Generate datetime features.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes removed",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/f7831bf17def433d993b0c1c70930958/internal_dataset.hdf5",
+            "description": "Remove datetime parent nodes.",
+            "dssf_info": {
+                "train_qso_final": {
+                    "type": "table",
+                    "path": "train_qso_final.csv",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "Unnamed: 0": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        }
+    ]
+}
