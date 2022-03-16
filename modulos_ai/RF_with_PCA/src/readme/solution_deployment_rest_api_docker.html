@@ -1,0 +1,186 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src="logo.svg" height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="Report.html">Insights</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API<span class="sr-only">(current)</span></a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="container content_div">
+  <div class="row">
+    <div>
+    <div style="height:0.5em;font-size:0.5em;">&nbsp;</div>
+    <h2 id="docker_rest">Dockerized REST API server</h4>
+
+    <h4 id="build_and_start">Build and start</h4>
+    <p>
+        The solution can be deployed as a REST server inside a docker container. This means that you do not have
+        to use python and a virtual environment. The deployment is done purely with docker commands. To deploy
+        the server locally in a docker container, please complete the following steps:
+    </p>
+    <p>
+        <ol>
+            <li>
+                Make sure docker is installed. If it is not installed, please follow the installation
+                instructions given on the official
+                <a href="https://docs.docker.com/engine/install/" target="_blank">docker website</a>.
+            </li>
+            <li>
+                Make sure to perform the post-installation steps to
+                <a href="https://docs.docker.com/engine/install/linux-postinstall/" target="_blank">
+                    manage docker as a non-root user</a>. Note that you only have to do this once
+                after installing docker on your system.
+            </li>
+            <li>
+                From inside the solution directory, run the following command:
+                <pre class="code"><code class="language-bash">docker build -t "name-of-docker-image" .</code></pre>
+                The name <code>name-of-docker-image</code> is the name of the docker image that is built by the
+                command. For example, you could copy paste the following command (if you don't already have a
+                docker image with the same name):
+                <pre class="code"><code class="language-bash">docker build -t solution_server_image .</code></pre>
+            </li>
+            <li>
+                To start the docker container that runs the solution server, use the following command:
+                <pre class="code"><code class="language-bash">docker run -d -p 5001:5001 -v "path-to-sol"/src:/src \
+-v "path-to-sol"/solution_server_config.yml:/solution_server_config.yml \
+--name "name-of-docker-container" "name-of-docker-image"</code></pre>
+            </li>
+            The path <code>path-to-sol</code> is the absolute path to the solution directory that should be used
+            by the server. You can also change the port that the container listens to, by replacing the port number
+            on the left side of the colon. If you are using one of the example clients in 
+            <code>solution_example_clients</code>, you also need to change the port there, since
+            all the example clients use the default port <code>5001</code>. The name <code>name-of-docker-container</code>
+            is the name of the docker container and you can choose it arbitrarily.
+
+            For example, you could copy paste the following command (if you are in the directory of the solution
+            that you want to use, have already built a solution server docker image with the name
+            <code>solution_server_image</code>, and don't already have a docker container with the name
+            <code>solution_server_container</code>):
+            <pre class="code"><code class="language-bash">docker run -d -p 5001:5001 -v $(pwd)/src:/src -v $(pwd)/solution_server_config.yml:/solution_server_config.yml \
+--name solution_server_container solution_server_image</code></pre>
+        </ol>
+    </p>
+
+    <p>
+      Once you have completed all of the above steps successfully, you should have a running solution server. Use
+      the following command to check that your server is running:
+    </p>    
+      <pre class="code"><code class="language-bash">docker logs "name-of-docker-container"</code></pre>
+
+    <p>
+      If the server is running, you can now make requests to the REST API in order to make predictions. Please see the
+      section <a href="solution_api_rest_api.html">REST API</a> for documentation on the API.
+    </p>
+
+    <div style="height:0.5em;font-size:0.5em;">&nbsp;</div>
+    <h4>Rebuild and restart</h4>
+    <p>
+      If you want to test a different solution,
+      you can either run it in parallel at a different port, or stop the container and restart it with the paths
+      to the solution you want to run. 
+
+      To stop the container, you can use the following command:
+    </p>
+      <pre class="code"><code class="language-bash">docker stop "name-of-docker-container"</code></pre>
+    <p>
+      After stopping the container, remove it with the following command:
+    </p>
+      <pre class="code"><code class="language-bash">docker rm "name-of-docker-container"</code></pre>
+    <p>
+      Please note that you should replace
+      <code>"name-of-docker-container"</code> with the name that you picked
+      for the container in the <a href="#build_and_start">Build and start</a>
+      section. (This also applies to the name of the docker image 
+      in the command to remove the docker image.)
+      
+      If removing the container was successful (you can check with
+      <code>docker container ps -a</code>), you can now rerun the 
+      <code>docker run</code> command from the
+      <a href="#build_and_start">Build and start</a> section with the paths
+      to the solution you want to test.
+
+      If you are testing multiple solutions that were all generated with the same
+      version of the Modulos AutoML platform, you can use the same
+      docker image for all of them. You only need to rebuild the image when you
+      upgrade the version of the platform. To rebuild the image, first destroy it
+      with the following command:
+    </p>
+      <pre class="code"><code class="language-bash">docker rmi $(docker images -q "name-of-docker-image")</code></pre>
+
+    <p>
+      If the destruction of the image was successful (you can check with
+      <code>docker images</code>), you can simply rerun the commands from the
+      <a href="#build_and_start">Build and start</a> section to re-deploy the
+      server with the new version.
+    </p>
+        <br><br>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
