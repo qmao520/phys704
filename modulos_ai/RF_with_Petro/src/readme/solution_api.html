@@ -1,0 +1,125 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src="logo.svg" height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="Report.html">Insights</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview<span class="sr-only">(current)</span></a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="container content_div">
+  <div class="row">
+    <div>
+      <h2>API Options for the Solution</h2>
+    <p>
+      There are several options for how to use this solution to generate predictions.
+      Depending on the workflow settings, some of them are available or not. Please
+      see the individual sections for more details and information on which 
+      options are available.
+    </p>
+    <p>
+      We divide the different options into two categories: A
+      prediction can be made either by deploying a server that serves a
+      REST API and then sending a request to it, or by directly running
+      the python prediction scripts (or the jupyter notebook) that are included
+      in the solution.
+    </p>
+        
+    <ul>
+      <li>
+        <a href="solution_api_python_scripts.html"> Python prediction scripts / jupyter notebook</a>
+      </li>
+
+      <li>
+        <a href="solution_api_rest_api.html"> REST API</a> <i>(available for all workflows except for time series workflows)</i>
+        <ul>
+          <li>
+            <a href="solution_api_rest_api.html#rest_prediction"> Prediction endpoint</a>
+          </li>
+          <li>
+            <a href="solution_api_rest_api.html#rest_sample_format"> Input sample format</a>
+          </li>
+          <li>
+            <a href="solution_api_rest_api.html#examples"> Example requests</a>
+          </li>
+          <li>
+            <a href="solution_clients.html"> Example clients</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br />
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
+
+<style lang="scss" scoped>
+    .cell-with-margin {
+      margin: 10px
+    }
+</style>
+  

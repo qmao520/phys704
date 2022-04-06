@@ -1,0 +1,2649 @@
+{
+    "__version__": 0.1,
+    "history_states": [
+        {
+            "entry_type": "DSSF saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Read DSSF and initialize Saver.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg"
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id"
+                }
+            },
+            "current_nodes": [],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {},
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes added",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Saving component image.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id"
+                }
+            },
+            "current_nodes": [
+                "image"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes added",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Saving component labels.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin",
+                        "RA",
+                        "DEC",
+                        "index",
+                        "Unnamed: 0.1",
+                        "petroR50_g",
+                        "petroR50_r"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "image",
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin",
+                "RA",
+                "DEC",
+                "index",
+                "Unnamed: 0.1",
+                "petroR50_g",
+                "petroR50_r"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image",
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin",
+                "RA": "RA",
+                "DEC": "DEC",
+                "index": "index",
+                "Unnamed: 0.1": "Unnamed: 0.1",
+                "petroR50_g": "petroR50_g",
+                "petroR50_r": "petroR50_r"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "heuristics saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Computing node type heuristics.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin",
+                        "RA",
+                        "DEC",
+                        "index",
+                        "Unnamed: 0.1",
+                        "petroR50_g",
+                        "petroR50_r"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "image",
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin",
+                "RA",
+                "DEC",
+                "index",
+                "Unnamed: 0.1",
+                "petroR50_g",
+                "petroR50_r"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {
+                "DEC": [
+                    "numerical"
+                ],
+                "RA": [
+                    "numerical"
+                ],
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "Unnamed: 0.1": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "petroR50_g": [
+                    "numerical"
+                ],
+                "petroR50_r": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {},
+            "node_types_possible": {
+                "DEC": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "RA": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0.1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_g": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_r": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image",
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin",
+                "RA": "RA",
+                "DEC": "DEC",
+                "index": "index",
+                "Unnamed: 0.1": "Unnamed: 0.1",
+                "petroR50_g": "petroR50_g",
+                "petroR50_r": "petroR50_r"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "user input saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Mock user selection by setting selections to defaults.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin",
+                        "RA",
+                        "DEC",
+                        "index",
+                        "Unnamed: 0.1",
+                        "petroR50_g",
+                        "petroR50_r"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "image",
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin",
+                "RA",
+                "DEC",
+                "index",
+                "Unnamed: 0.1",
+                "petroR50_g",
+                "petroR50_r"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {
+                "DEC": [
+                    "numerical"
+                ],
+                "RA": [
+                    "numerical"
+                ],
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "Unnamed: 0.1": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "petroR50_g": [
+                    "numerical"
+                ],
+                "petroR50_r": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "DEC": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "RA": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0.1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_g": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_r": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image",
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin",
+                "RA": "RA",
+                "DEC": "DEC",
+                "index": "index",
+                "Unnamed: 0.1": "Unnamed: 0.1",
+                "petroR50_g": "petroR50_g",
+                "petroR50_r": "petroR50_r"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes generated",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Generate datetime features.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin",
+                        "RA",
+                        "DEC",
+                        "index",
+                        "Unnamed: 0.1",
+                        "petroR50_g",
+                        "petroR50_r"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "image",
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin",
+                "RA",
+                "DEC",
+                "index",
+                "Unnamed: 0.1",
+                "petroR50_g",
+                "petroR50_r"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {
+                "DEC": [
+                    "numerical"
+                ],
+                "RA": [
+                    "numerical"
+                ],
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "Unnamed: 0.1": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "petroR50_g": [
+                    "numerical"
+                ],
+                "petroR50_r": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "DEC": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "RA": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0.1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_g": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_r": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image",
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin",
+                "RA": "RA",
+                "DEC": "DEC",
+                "index": "index",
+                "Unnamed: 0.1": "Unnamed: 0.1",
+                "petroR50_g": "petroR50_g",
+                "petroR50_r": "petroR50_r"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes removed",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/b1e8b9bda95c4f768732851c05679a68/internal_dataset.hdf5",
+            "description": "Remove datetime parent nodes.",
+            "dssf_info": {
+                "image": {
+                    "type": "num",
+                    "path": "images/{id}.jpg",
+                    "nodes": [
+                        "image"
+                    ]
+                },
+                "labels": {
+                    "type": "table",
+                    "path": "labels.csv",
+                    "sample_id_column": "image_id",
+                    "nodes": [
+                        "Unnamed: 0",
+                        "ug",
+                        "ur",
+                        "ui",
+                        "uz",
+                        "uj",
+                        "uk",
+                        "uw1",
+                        "uw2",
+                        "gr",
+                        "gi",
+                        "gz",
+                        "gk",
+                        "gw1",
+                        "gw2",
+                        "ri",
+                        "rz",
+                        "rw1",
+                        "rw2",
+                        "iz",
+                        "ij",
+                        "ik",
+                        "iw1",
+                        "iw2",
+                        "zj",
+                        "zk",
+                        "zw1",
+                        "zw2",
+                        "jw1",
+                        "jw2",
+                        "kw1",
+                        "kw2",
+                        "w1w2",
+                        "class_bin",
+                        "RA",
+                        "DEC",
+                        "index",
+                        "Unnamed: 0.1",
+                        "petroR50_g",
+                        "petroR50_r"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "image",
+                "Unnamed: 0",
+                "ug",
+                "ur",
+                "ui",
+                "uz",
+                "uj",
+                "uk",
+                "uw1",
+                "uw2",
+                "gr",
+                "gi",
+                "gz",
+                "gk",
+                "gw1",
+                "gw2",
+                "ri",
+                "rz",
+                "rw1",
+                "rw2",
+                "iz",
+                "ij",
+                "ik",
+                "iw1",
+                "iw2",
+                "zj",
+                "zk",
+                "zw1",
+                "zw2",
+                "jw1",
+                "jw2",
+                "kw1",
+                "kw2",
+                "w1w2",
+                "class_bin",
+                "RA",
+                "DEC",
+                "index",
+                "Unnamed: 0.1",
+                "petroR50_g",
+                "petroR50_r"
+            ],
+            "node_type_dssf": {
+                "image": "numerical"
+            },
+            "node_types_probable": {
+                "DEC": [
+                    "numerical"
+                ],
+                "RA": [
+                    "numerical"
+                ],
+                "Unnamed: 0": [
+                    "numerical"
+                ],
+                "Unnamed: 0.1": [
+                    "numerical"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "gi": [
+                    "numerical"
+                ],
+                "gk": [
+                    "numerical"
+                ],
+                "gr": [
+                    "numerical"
+                ],
+                "gw1": [
+                    "numerical"
+                ],
+                "gw2": [
+                    "numerical"
+                ],
+                "gz": [
+                    "numerical"
+                ],
+                "ij": [
+                    "numerical"
+                ],
+                "ik": [
+                    "numerical"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "numerical"
+                ],
+                "iw1": [
+                    "numerical"
+                ],
+                "iw2": [
+                    "numerical"
+                ],
+                "iz": [
+                    "numerical"
+                ],
+                "jw1": [
+                    "numerical"
+                ],
+                "jw2": [
+                    "numerical"
+                ],
+                "kw1": [
+                    "numerical"
+                ],
+                "kw2": [
+                    "numerical"
+                ],
+                "petroR50_g": [
+                    "numerical"
+                ],
+                "petroR50_r": [
+                    "numerical"
+                ],
+                "ri": [
+                    "numerical"
+                ],
+                "rw1": [
+                    "numerical"
+                ],
+                "rw2": [
+                    "numerical"
+                ],
+                "rz": [
+                    "numerical"
+                ],
+                "ug": [
+                    "numerical"
+                ],
+                "ui": [
+                    "numerical"
+                ],
+                "uj": [
+                    "numerical"
+                ],
+                "uk": [
+                    "numerical"
+                ],
+                "ur": [
+                    "numerical"
+                ],
+                "uw1": [
+                    "numerical"
+                ],
+                "uw2": [
+                    "numerical"
+                ],
+                "uz": [
+                    "numerical"
+                ],
+                "w1w2": [
+                    "numerical"
+                ],
+                "zj": [
+                    "numerical"
+                ],
+                "zk": [
+                    "numerical"
+                ],
+                "zw1": [
+                    "numerical"
+                ],
+                "zw2": [
+                    "numerical"
+                ]
+            },
+            "node_type": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "node_types_possible": {
+                "DEC": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "RA": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "Unnamed: 0.1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "class_bin": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "gi": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gr": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "gz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ij": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ik": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "image": [
+                    "numerical"
+                ],
+                "index": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "iz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "jw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "kw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_g": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "petroR50_r": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ri": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "rz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ug": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ui": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "ur": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "uz": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "w1w2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zj": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zk": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw1": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "zw2": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "DEC": "numerical",
+                "RA": "numerical",
+                "Unnamed: 0": "numerical",
+                "Unnamed: 0.1": "numerical",
+                "class_bin": "bool",
+                "gi": "numerical",
+                "gk": "numerical",
+                "gr": "numerical",
+                "gw1": "numerical",
+                "gw2": "numerical",
+                "gz": "numerical",
+                "ij": "numerical",
+                "ik": "numerical",
+                "image": "numerical",
+                "index": "numerical",
+                "iw1": "numerical",
+                "iw2": "numerical",
+                "iz": "numerical",
+                "jw1": "numerical",
+                "jw2": "numerical",
+                "kw1": "numerical",
+                "kw2": "numerical",
+                "petroR50_g": "numerical",
+                "petroR50_r": "numerical",
+                "ri": "numerical",
+                "rw1": "numerical",
+                "rw2": "numerical",
+                "rz": "numerical",
+                "ug": "numerical",
+                "ui": "numerical",
+                "uj": "numerical",
+                "uk": "numerical",
+                "ur": "numerical",
+                "uw1": "numerical",
+                "uw2": "numerical",
+                "uz": "numerical",
+                "w1w2": "numerical",
+                "zj": "numerical",
+                "zk": "numerical",
+                "zw1": "numerical",
+                "zw2": "numerical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "image": "image",
+                "Unnamed: 0": "Unnamed: 0",
+                "ug": "ug",
+                "ur": "ur",
+                "ui": "ui",
+                "uz": "uz",
+                "uj": "uj",
+                "uk": "uk",
+                "uw1": "uw1",
+                "uw2": "uw2",
+                "gr": "gr",
+                "gi": "gi",
+                "gz": "gz",
+                "gk": "gk",
+                "gw1": "gw1",
+                "gw2": "gw2",
+                "ri": "ri",
+                "rz": "rz",
+                "rw1": "rw1",
+                "rw2": "rw2",
+                "iz": "iz",
+                "ij": "ij",
+                "ik": "ik",
+                "iw1": "iw1",
+                "iw2": "iw2",
+                "zj": "zj",
+                "zk": "zk",
+                "zw1": "zw1",
+                "zw2": "zw2",
+                "jw1": "jw1",
+                "jw2": "jw2",
+                "kw1": "kw1",
+                "kw2": "kw2",
+                "w1w2": "w1w2",
+                "class_bin": "class_bin",
+                "RA": "RA",
+                "DEC": "DEC",
+                "index": "index",
+                "Unnamed: 0.1": "Unnamed: 0.1",
+                "petroR50_g": "petroR50_g",
+                "petroR50_r": "petroR50_r"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 [
     {
         "name": "image",
-        "path": "images/{id}.tif",
+        "path": "images/{id}.jpg",
         "type": "num",
         "optional_info": {
             "feature_type": "numerical"

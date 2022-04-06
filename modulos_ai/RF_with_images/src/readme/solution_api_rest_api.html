@@ -1,0 +1,311 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src="logo.svg" height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="Report.html">Insights</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API<span class="sr-only">(current)</span></a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="container content_div">
+  <div class="row">
+
+    <h2 id="rest_api"> REST API</h2>
+    <div>    
+      <p>
+        Please note that a REST API is only available for solutions that
+        were generated with a classification or regression workflow, but
+        not for time series solutions.
+      </p>
+      <ul>
+          <li>
+            <a href="#rest_prediction"> Prediction endpoint </a>
+          </li>
+          <li>
+            <a href="#rest_sample_format"> Input sample format</a>
+          </li>
+          <li>
+            <a href="#examples"> Example requests</a>
+          </li>
+      </ul>
+      <p>
+        This section summarizes the prediction endpoint of the
+        solution REST API. For a complete documentation of the solution REST API,
+        please see the file <code>rest_api.yml</code> at
+        <code>solution-server/doc</code> (in the downloaded solution). For an
+        example of a request in python (with an example sample that is specific
+        to this solution),
+        check out the example clients in the folder
+        <code>solution_example_clients</code>.
+      </p>
+      <p>
+        Please note that this section assumes that a solution server is running.
+        For information on how to deploy a solution server, please see the 
+        <a href="solution_deployment.html">Installation & Deployment</a> section.
+      </p>
+    </div>
+    <div style="height:0.5em;font-size:0.5em;">&nbsp;</div>
+    <h4 id="rest_prediction"> Prediction endpoint</h4>
+    <div>
+    <p>
+      <table>
+        <tr>
+          <td class="center-center">
+            <div class="cell-with-margin">
+              <b>url</b>
+            </div>
+          </td>
+          <td class="top-left">
+            <div class="cell-with-margin">
+              The url for the prediction endpoint is <code>ip:port/predict</code>.
+              Here, <code>ip</code> is the IP address where the server is
+              deployed, and <code>port</code> is the port that the server listens
+              to. The default address is <code>http://0.0.0.0:5001/predict</code>.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="center-center">
+            <div class="cell-with-margin">
+              <b>header</b>
+            </div>
+          </td>
+          <td class="top-left">
+            <div class="cell-with-margin">
+              The request header has to contain the following media type:
+              <code>{'Content-type': 'application/json'}</code>.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="center-center">
+            <div class="cell-with-margin">
+              <b>body</b>
+            </div>
+          </td>
+          <td class="top-left">
+            <div class="cell-with-margin">
+              The request body must be a (stringified) json describing
+              <b>one single input sample</b>. The keys of the input sample
+              json are the names of the features of the dataset and the
+              values are the feature values themselves. For a detailed description
+              of this input sample's format, see the section
+              <a href="#rest_sample_format">Input sample format</a>.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="center-center">
+            <div class="cell-with-margin">
+              <b>response</b>
+            </div>
+          </td>
+          <td class="top-left">
+            <div class="cell-with-margin">
+              The response is a json with the keys <code>code</code>, <code>data</code>,
+              and <code>response</code>. The <code>code</code> is the HTTP code of the
+              response, <data>data</data> contains the prediction result, and the
+              <code>response</code> contains a summarized version of the response.
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br />
+    </p>
+  </div>
+    <br /> <br />
+
+    <div style="height:0.5em;font-size:0.5em;">&nbsp;</div>
+    <h4 id="rest_sample_format"> Input sample format</h4>
+    <div>
+      <p>
+        The input sample must be a json with the feature names as keys and
+        the features as values. Note that we currently only support single samples 
+        as inputs and there is no batch prediction using the REST API interface.
+      </p>
+      <p>
+        The names of the input features need to be the exact same names that were
+        used in the dataset uploaded to the platform. Additionally,
+        a fake sample id value needs to be provided. The name of the
+        sample id column is either the name that was used in the uploaded
+        dataset (if it contained sample ids) or the name of the sample ids
+        that were generated on the platform. Please see the example input
+        in one of the example clients
+        (in <code>solution_example_clients</code>) if you are unsure about 
+        the names of your features or the name of the sample id column.
+      </p>
+
+      <p>
+        The request data being a json poses some limitations for the input
+        data. Only json-serializable data can be sent directly via the REST API.
+        For images or high dimensional
+        tensors, the solution REST API supports
+        <code>base64</code> encoding/decoding. Files that are not
+        json-serializable, can be encoded as a <code>string</code> so
+        that they can easily be included in the input sample json. However,
+        please note the following constraints:
+      </p>
+        <ul>
+          <li>
+            When a feature is base64 encoded, it needs to have the
+            same file extension (pre-encoding) that it had when it was
+            uploaded to the platform. E.g. if an image was uploaded
+            to the platform as a <code>.jpg</code> image, then
+            you should read a <code>.jpg</code> as a binary
+            and then base64 encode it. This guarantees that the server
+            receives an equivalent <code>.jpg</code> image after decoding the string.
+          </li>
+          <li>
+            Scalar features (e.g. integer numbers, strings, etc.)
+            cannot be base64 encoded, i.e. they must be put directly
+            into the json. Only higher dimensional features (e.g.
+            vectors, images, etc.) can be decoded by the server.
+          </li>
+        </ul>
+        <br />
+      </div>
+
+      <h4 id="examples"> Example requests</h4>
+      <div>
+      <p>
+        This section contains examples of how to send a request to a running
+        solution server. The first two examples are in Python and the last two
+        examples use the command line tool <code>curl</code>. The python examples
+        are included as usable clients in the solution and they contain 
+        an actual example input that was sampled from the validation
+        dataset on the platform (when the solution was created).
+      </p>
+
+      <div style="height:1.0em;font-size:0.5em;">&nbsp;</div>
+      <ul>
+        <li><b>Python script client:</b>
+            To run the python client, first install the requirements:
+            <pre class="code"><code class="language-bash">pip install -r solution_example_clients/python-client-requirements.txt</code></pre>
+            Then, you can run
+            <pre class="code"><code class="language-bash">python python_client.py</code></pre>
+            from inside the folder <code>solution_example_clients</code>
+            to make a request.
+        </li>
+        <div style="height:1.0em;font-size:0.5em;">&nbsp;</div>
+         <li><b>Jupyter notebook client:</b>
+           To use the jupyter notebook, first install the requirements:
+            <pre class="code"><code class="language-bash">pip install -r solution_example_clients/python-client-requirements.txt
+pip install jupyter
+python -m ipykernel install --user --name="replace-name-of-your-env-here"</code></pre>
+            Then, you can run
+            <pre class="code"><code class="language-bash">jupyter notebook</code></pre>
+            and open the file <code>jupyter_client_example.ipynb</code> via
+            the jupyter notebook user interface.
+        </li>
+        <div style="height:1.0em;font-size:0.5em;">&nbsp;</div>
+        <li><b>Curl example 1: A purely tabular dataset.</b>
+            Let's assume that the input sample has three features:
+            <code>temperature = 21</code>, <code>weekday = "Monday"</code>,
+            <code>humidity = 60</code>. Furthermore, let's assume the server
+            is deployed locally and listens to port <code>5001</code>. The
+            features are all scalars, hence we have to include
+            all values directly in the request body. The <code>curl</code> command then
+            is as follows:
+            <pre class="code"><code class="language-bash">curl -X POST -H 'Content-Type: application/json' -d \
+'{"data": [{"temperature": 21, "weekday": "Monday", "humidity": 60}]}' \
+http://127.0.0.1:5001/predict</code></pre>
+
+        </li>
+        <div style="height:1.0em;font-size:0.5em;">&nbsp;</div>
+        <li><b>Curl example 2: A dataset that consists of images and tabular data.</b>
+            Let's assume that the input sample has two scalar features
+            <code>longitude = -122.1</code>, <code>latitude = 38.2</code>,
+            and an image, which is saved as a <code>.jpg</code> file at
+            <code>"path-to-image"</code>. Furthermore, let's assume
+            the server is deployed locally and listens to port
+            <code>5001</code>. The following command then encodes the image
+            and sends the request using curl:
+            <pre class="code"><code class="language-bash">(echo -n '{"data": [{"images": "'; base64 "path-to-image"; \
+echo '", "longitude": -122.1, "latitude": 38.2, "sample_ids": "4CA7A2"}]}') | \
+curl -H 'Content-Type: application/json' -d @- http://127.0.0.1:5001/predict</code></pre>
+        </li>
+      </ul>
+      <p>
+        <b>Note: </b>For examples on how to build a client in other programming 
+        languages, check out the section 
+        <a href="solution_clients.html">Example clients</a>.
+    </p>
+      <br />
+      <br />
+    </div>
+    </div>
+  </div>
+
+
+<footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
+
+<style lang="scss" scoped>
+    .cell-with-margin {
+      margin: 10px
+    }
+</style>
+  
