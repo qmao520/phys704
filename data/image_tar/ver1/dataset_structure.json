@@ -1,0 +1,21 @@
+[
+    {
+        "name": "image",
+        "path": "images/{id}.tif",
+        "type": "num",
+        "optional_info": {
+            "feature_type": "numerical"
+        }
+    },
+    {
+        "name": "labels",
+        "path": "labels.csv",
+        "type": "table",
+        "optional_info": {
+            "sample_id_column": "image_id"
+        }
+    },
+    {
+        "_version": "0.3"
+    }
+]
