@@ -1,0 +1,99 @@
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 100%;
+} */
+
+th, td {
+  padding: 15px;
+}
+
+table tr td.table_label {background-color:  #E6E6E6}
+
+table tr td.table_pred_ok {background-color: #D5E2DE}
+
+table tr td.table_pred_bad {background-color: #F2CCC4}
+
+table tr td.table_pred_normal {background-color: #F2F2F2}
+
+table tr.table_head_grey {background-color: #D7D7D7}
+
+table tr td.table_error {background-color: #E6E6E6}
+
+table tr td.no-left-border {border-left: none}
+
+table tr td.no-right-border {border-right: none}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 2.5rem;   
+  background-color: #202e3b;
+}
+
+header {
+  padding: 8px;
+  background-color: #202e3b;
+}
+
+.navbar-custom { 
+  background-color: #202e3b;
+}
+
+.navbar{
+  padding: 0px 40px;
+}
+
+.navbar-nav {
+  margin: 35px;
+}
+
+.navbar-collapse {
+  background-color:#202e3b;
+}
+
+.collapse:not(.show) {
+  height: 65px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.code {
+  border-radius: 10px;
+  background-color: #202e3b;
+  border: block;
+  color: white;
+  padding: 10px;
+}
+
+.content_div {
+  margin-top: 20px;
+}
+.base_div{
+  position: relative;
+  min-height: 100vh;
+}
+
+.larger_text{
+  font-size: larger;
+}
+
+h2{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h3{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}

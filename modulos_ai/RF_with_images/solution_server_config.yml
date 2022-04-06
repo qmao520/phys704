@@ -1,0 +1,12 @@
+# These settings can be changed.
+port: 5001
+host: 0.0.0.0
+tmp_dir: .tmp_dir_solution
+
+
+# These settings should never be changed.
+tensor_file_extensions: {'image': '.jpg'}
+tensor_dimensions: {'image': [32, 32, 1]}
+label_file_extension: .csv
+label_node_name: class_bin
+metadata_path: metadata/input_metadata.bin

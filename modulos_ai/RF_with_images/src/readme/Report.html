@@ -1,0 +1,812 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="bokeh-2.4.1.min.js"></script>
+  <script src="bokeh-tables-2.4.1.min.js"></script>
+  <script src="bokeh-widgets-2.4.1.min.js"></script>
+  <script src="jquery-3.6.0.slim.min.js"></script>
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  
+<script type="text/javascript">
+    (function() {
+          const fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                const docs_json = '{"c7ba2fa0-aa8b-4d08-8053-fe069c3544eb":{"defs":[],"roots":{"references":[{"attributes":{"data":{"Abbreviation":["A","B"],"Original":["0","1"]},"selected":{"id":"5589"},"selection_policy":{"id":"5588"}},"id":"5568","type":"ColumnDataSource"},{"attributes":{},"id":"5579","type":"CategoricalTickFormatter"},{"attributes":{"coordinates":null,"group":null},"id":"5535","type":"Title"},{"attributes":{},"id":"5581","type":"NoOverlap"},{"attributes":{"axis_label":"Predicted Label","axis_label_text_align":"center","axis_label_text_font":"Open Sans","axis_label_text_font_size":"20px","axis_label_text_font_style":"normal","axis_line_color":null,"coordinates":null,"formatter":{"id":"5583"},"group":null,"major_label_orientation":1.0471975511965976,"major_label_policy":{"id":"5584"},"major_label_standoff":0,"major_label_text_font":"Open Sans","major_label_text_font_size":"13px","major_tick_line_color":null,"ticker":{"id":"5546"}},"id":"5545","type":"CategoricalAxis"},{"attributes":{"editor":{"id":"5586"},"field":"Abbreviation","formatter":{"id":"5585"},"title":"Abbreviation"},"id":"5570","type":"TableColumn"},{"attributes":{},"id":"5586","type":"StringEditor"},{"attributes":{"fill_alpha":{"field":"alphas"},"fill_color":{"field":"colors"},"hatch_alpha":{"field":"alphas"},"hatch_color":{"field":"colors"},"height":{"value":0.9},"line_alpha":{"field":"alphas"},"line_color":{"value":null},"width":{"value":0.9},"x":{"field":"xname"},"y":{"field":"yname"}},"id":"5559","type":"Rect"},{"attributes":{},"id":"5541","type":"CategoricalScale"},{"attributes":{"coordinates":null,"data_source":{"id":"5557"},"glyph":{"id":"5559"},"group":null,"hover_glyph":{"id":"5561"},"muted_glyph":{"id":"5562"},"nonselection_glyph":{"id":"5560"},"view":{"id":"5564"}},"id":"5563","type":"GlyphRenderer"},{"attributes":{},"id":"5590","type":"UnionRenderers"},{"attributes":{},"id":"5587","type":"StringEditor"},{"attributes":{"tools":[{"id":"5551"},{"id":"5552"}]},"id":"5553","type":"Toolbar"},{"attributes":{"desired_num_ticks":9},"id":"5566","type":"BasicTicker"},{"attributes":{"data":{"alphas":[1,1,1,1],"colors":["rgba(44, 48, 113, 255)","rgba(131, 188, 144, 255)","rgba(164, 204, 144, 255)","rgba(74, 154, 143, 255)"],"count":[25,3,0,9],"xname":["B","B","A","A"],"yname":["B","A","B","A"]},"selected":{"id":"5591"},"selection_policy":{"id":"5590"}},"id":"5557","type":"ColumnDataSource"},{"attributes":{"columns":[{"id":"5570"},{"id":"5571"}],"height":461,"row_height":35,"sizing_mode":"scale_height","source":{"id":"5568"},"view":{"id":"5575"},"width":200},"id":"5573","type":"DataTable"},{"attributes":{},"id":"5588","type":"UnionRenderers"},{"attributes":{},"id":"5546","type":"CategoricalTicker"},{"attributes":{"factors":["A","B"]},"id":"5537","type":"FactorRange"},{"attributes":{"source":{"id":"5557"}},"id":"5564","type":"CDSView"},{"attributes":{},"id":"5585","type":"StringFormatter"},{"attributes":{"template":"&lt;div style=\\"overflow:scroll\\"&gt;&lt;%= Original %&gt;&lt;/div&gt;"},"id":"5569","type":"HTMLTemplateFormatter"},{"attributes":{},"id":"5589","type":"Selection"},{"attributes":{},"id":"5591","type":"Selection"},{"attributes":{},"id":"5584","type":"AllLabels"},{"attributes":{},"id":"5580","type":"AllLabels"},{"attributes":{"children":[{"id":"5534"},{"id":"5573"}],"sizing_mode":"scale_width"},"id":"5576","type":"Row"},{"attributes":{"callback":null,"tooltips":[["names","@yname, @xname"],["count","@count"]]},"id":"5551","type":"HoverTool"},{"attributes":{"high":25,"low":0,"palette":["#a5cd90","#a4cc90","#a3cc91","#a2cb91","#a0cb91","#9fca91","#9eca91","#9dc991","#9cc891","#9bc891","#9ac791","#99c791","#98c691","#96c691","#95c591","#94c591","#93c491","#92c491","#91c391","#90c391","#8fc291","#8ec291","#8dc191","#8bc191","#8ac091","#89bf91","#88bf91","#87be91","#86be91","#85bd91","#84bd91","#82bc91","#81bc91","#80bb91","#7fbb91","#7eba91","#7dba91","#7cb991","#7bb991","#79b891","#78b891","#77b791","#76b791","#75b690","#74b690","#73b590","#72b490","#71b490","#70b390","#6fb390","#6eb290","#6db290","#6cb190","#6bb190","#6ab090","#69b090","#68af90","#67ae90","#66ae90","#65ad90","#64ad90","#63ac90","#62ac90","#62ab90","#61aa90","#60aa90","#5fa990","#5ea990","#5da890","#5ca890","#5ba790","#5ba690","#5aa690","#59a590","#58a590","#57a490","#57a490","#56a390","#55a290","#54a290","#53a190","#53a190","#52a090","#519f90","#509f90","#509e90","#4f9e90","#4e9d90","#4e9d90","#4d9c90","#4c9b90","#4b9b90","#4b9a8f","#4a9a8f","#49998f","#49988f","#48988f","#47978f","#47978f","#46968f","#45958f","#45958f","#44948f","#43948f","#43938f","#42928f","#41928f","#41918f","#40918f","#40908e","#3f8f8e","#3e8f8e","#3e8e8e","#3d8e8e","#3c8d8e","#3c8c8e","#3b8c8e","#3a8b8e","#3a8b8e","#398a8e","#388a8e","#38898e","#37888e","#37888d","#36878d","#35878d","#35868d","#34858d","#33858d","#33848d","#32848d","#31838d","#31828d","#30828d","#2f818d","#2f818d","#2e808d","#2d808c","#2d7f8c","#2c7e8c","#2c7e8c","#2b7d8c","#2a7d8c","#2a7c8c","#297b8c","#287b8c","#287a8c","#277a8c","#27798c","#26788c","#25788c","#25778c","#24778b","#24768b","#23758b","#23758b","#22748b","#22748b","#21738b","#21728b","#20728b","#20718b","#20718b","#1f708b","#1f6f8a","#1e6f8a","#1e6e8a","#1e6d8a","#1e6d8a","#1d6c8a","#1d6c8a","#1d6b8a","#1d6a8a","#1d6a8a","#1c6989","#1c6889","#1c6889","#1c6789","#1c6689","#1c6689","#1c6589","#1c6488","#1c6488","#1c6388","#1d6388","#1d6288","#1d6188","#1d6187","#1d6087","#1d5f87","#1d5f87","#1e5e87","#1e5d86","#1e5d86","#1e5c86","#1e5b86","#1f5b86","#1f5a85","#1f5985","#1f5985","#205885","#205784","#205784","#205684","#215584","#215583","#215483","#225383","#225283","#225282","#225182","#235082","#235081","#234f81","#244e81","#244e80","#244d80","#254c80","#254c7f","#254b7f","#254a7f","#26497e","#26497e","#26487e","#27477d","#27477d","#27467c","#27457c","#28457c","#28447b","#28437b","#28427a","#29427a","#29417a","#294079","#294079","#2a3f78","#2a3e78","#2a3d78","#2a3d77","#2a3c77","#2a3b76","#2b3b76","#2b3a76","#2b3975","#2b3875","#2b3875","#2b3774","#2b3674","#2c3574","#2c3573","#2c3473","#2c3373","#2c3272","#2c3172","#2c3172"]},"id":"5565","type":"LinearColorMapper"},{"attributes":{"axis":{"id":"5545"},"coordinates":null,"grid_line_color":null,"group":null,"ticker":null},"id":"5547","type":"Grid"},{"attributes":{},"id":"5549","type":"CategoricalTicker"},{"attributes":{},"id":"5552","type":"SaveTool"},{"attributes":{"above":[{"id":"5556"}],"below":[{"id":"5545"}],"center":[{"id":"5547"},{"id":"5550"}],"height":461,"left":[{"id":"5548"}],"renderers":[{"id":"5563"}],"right":[{"id":"5567"}],"sizing_mode":"scale_width","title":{"id":"5535"},"toolbar":{"id":"5553"},"width":576,"x_range":{"id":"5537"},"x_scale":{"id":"5541"},"y_range":{"id":"5539"},"y_scale":{"id":"5543"}},"id":"5534","subtype":"Figure","type":"Plot"},{"attributes":{"axis_label":"True Label","axis_label_text_align":"center","axis_label_text_font":"Open Sans","axis_label_text_font_size":"20px","axis_label_text_font_style":"normal","axis_line_color":null,"coordinates":null,"formatter":{"id":"5579"},"group":null,"major_label_orientation":0.5235987755982988,"major_label_policy":{"id":"5580"},"major_label_standoff":0,"major_label_text_font":"Open Sans","major_label_text_font_size":"13px","major_tick_line_color":null,"ticker":{"id":"5549"}},"id":"5548","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"colors"},"hatch_alpha":{"value":0.1},"hatch_color":{"field":"colors"},"height":{"value":0.9},"line_alpha":{"value":0.1},"line_color":{"value":null},"width":{"value":0.9},"x":{"field":"xname"},"y":{"field":"yname"}},"id":"5560","type":"Rect"},{"attributes":{"source":{"id":"5568"}},"id":"5575","type":"CDSView"},{"attributes":{},"id":"5583","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"field":"alphas"},"fill_color":{"field":"colors"},"hatch_alpha":{"field":"alphas"},"hatch_color":{"field":"colors"},"height":{"value":0.9},"line_alpha":{"field":"alphas"},"width":{"value":0.9},"x":{"field":"xname"},"y":{"field":"yname"}},"id":"5561","type":"Rect"},{"attributes":{"axis":{"id":"5548"},"coordinates":null,"dimension":1,"grid_line_color":null,"group":null,"ticker":null},"id":"5550","type":"Grid"},{"attributes":{"factors":["B","A"]},"id":"5539","type":"FactorRange"},{"attributes":{"color_mapper":{"id":"5565"},"coordinates":null,"group":null,"label_standoff":12,"location":[0,0],"major_label_policy":{"id":"5581"},"ticker":{"id":"5566"}},"id":"5567","type":"ColorBar"},{"attributes":{"align":"center","coordinates":null,"group":null,"text":"Confusion Matrix (interactive)","text_font":"Open Sans","text_font_size":"25px","text_font_style":"normal"},"id":"5556","type":"Title"},{"attributes":{},"id":"5543","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"field":"colors"},"hatch_alpha":{"value":0.2},"hatch_color":{"field":"colors"},"height":{"value":0.9},"line_alpha":{"value":0.2},"line_color":{"value":null},"width":{"value":0.9},"x":{"field":"xname"},"y":{"field":"yname"}},"id":"5562","type":"Rect"},{"attributes":{"editor":{"id":"5587"},"field":"Original","formatter":{"id":"5569"},"title":"Original"},"id":"5571","type":"TableColumn"}],"root_ids":["5576"]},"title":"Bokeh Application","version":"2.4.1"}}';
+                const render_items = [{"docid":"c7ba2fa0-aa8b-4d08-8053-fe069c3544eb","root_ids":["5576"],"roots":{"5576":"74dbb1b3-f3c1-42a5-8931-1e65dc8020dc"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  let attempts = 0;
+                  const timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="../../README.html">
+          <img src='logo.svg' height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="../../README.html">Info</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link larger_text" href="Report.html">Insights<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <div class="container content_div">
+    <div class="row">
+      <div>
+        <h2>Solution Insights</h2>
+        <p>
+          Below we provide <a href='#fig'>figures</a> and <a href='#ex'>example predictions</a> 
+          to help assess the performance of your solution.
+        </p>
+        <a id="fig"></a>
+          <h3>Figures</h3>
+        <p>The figures are generated based on the prediction and labels from the validation dataset.
+</p>
+</a>
+<table>
+<tr>
+<td><div style='display: flex; align-items: center; justify-content: space-evenly;'>
+<img src='../imgs/ConfusionMatrix(static)_matrix_0.svg'
+alt='ConfusionMatrix(static)_matrix_0.svg'>
+<table>
+<tr>
+<td>A</td><td>0</td>
+</tr>
+<tr>
+<td>B</td><td>1</td>
+</tr>
+</table>
+
+</div></td>
+<td width='20%'><p>Confusion matrices are used to evaluate the performance of classifiers. The diagonal elements represent the number of samples for which the predicted and the true label are equal. Off-diagonal elements are those that are mislabeled by the classifier.</p></td>
+</tr>
+<tr>
+<td width='80%'>
+<div class="bk-root" id="74dbb1b3-f3c1-42a5-8931-1e65dc8020dc" data-root-id="5576"></div></td><td width='20%'><p>Confusion matrices are used to evaluate the performance of classifiers. The diagonal elements represent the number of samples for which the predicted and the true label are equal. Off-diagonal elements are those that are mislabeled by the classifier.</p></td></tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container content_div">
+    <div class='row'>
+      <div>
+        <a id='ex'>
+          <h3>Prediction Examples</h3>
+          <p>
+            The following examples were extracted from the validation
+            dataset. We show samples for which the solution performs well
+            and samples for which the solution performs poorly.
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='container content_div'>
+<div class='row'>
+<div>
+<p>For the following 10 samples, the predicted classifications are correct:</p>
+</div>
+</div>
+</div>
+<div class='table-responsive container content_div'>
+<div class='row'>
+<div>
+<table class='table'>
+<tr class='table_head_grey'>
+<th>Label</th>
+<th>Prediction</th>
+<th>gi</th>
+<th>gk</th>
+<th>gr</th>
+<th>gw1</th>
+<th>gw2</th>
+<th>gz</th>
+<th>ij</th>
+<th>ik</th>
+<th>image</th>
+<th>index</th>
+<th>iw1</th>
+<th>iw2</th>
+<th>iz</th>
+<th>jw1</th>
+<th>jw2</th>
+<th>kw1</th>
+<th>kw2</th>
+<th>petroR50_g</th>
+<th>petroR50_r</th>
+<th>ri</th>
+<th>rw1</th>
+<th>rw2</th>
+<th>rz</th>
+<th>ug</th>
+<th>ui</th>
+<th>uj</th>
+<th>uk</th>
+<th>ur</th>
+<th>uw1</th>
+<th>uw2</th>
+<th>uz</th>
+<th>w1w2</th>
+<th>zj</th>
+<th>zk</th>
+<th>zw1</th>
+<th>zw2</th>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.5976</td>
+<td> 4.82832</td>
+<td> 0.4322</td>
+<td> 6.31054</td>
+<td> 6.9033</td>
+<td> 2.5516</td>
+<td> 1.83102</td>
+<td> 3.23072</td>
+<td><img src='../imgs/image/003_003753.8-005152_K_thumbnail.png' alt=003_003753.8-005152_K_thumbnail.png>
+</td>
+<td>3</td>
+<td> 4.71294</td>
+<td> 5.3057</td>
+<td> 0.954</td>
+<td> 2.88193</td>
+<td> 3.47468</td>
+<td> 1.48222</td>
+<td> 2.07498</td>
+<td> 9.47434</td>
+<td>-0.864523</td>
+<td> 1.1654</td>
+<td> 5.87834</td>
+<td> 6.4711</td>
+<td> 2.1194</td>
+<td> 0.5084</td>
+<td> 2.106</td>
+<td> 3.93702</td>
+<td> 5.33672</td>
+<td> 0.9406</td>
+<td> 6.81894</td>
+<td> 7.4117</td>
+<td> 3.06</td>
+<td> 0.592757</td>
+<td> 0.877017</td>
+<td> 2.27672</td>
+<td> 3.75894</td>
+<td> 4.3517</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.995</td>
+<td> 4.47819</td>
+<td> 0.7491</td>
+<td> 5.75398</td>
+<td> 6.50626</td>
+<td> 2.266</td>
+<td> 1.09249</td>
+<td> 2.48319</td>
+<td><img src='../imgs/image/018_221255.3+000108_K_thumbnail.png' alt=018_221255.3+000108_K_thumbnail.png>
+</td>
+<td>18</td>
+<td> 3.75898</td>
+<td> 4.51126</td>
+<td> 0.271</td>
+<td> 2.66649</td>
+<td> 3.41877</td>
+<td> 1.27579</td>
+<td> 2.02807</td>
+<td> 333.23</td>
+<td> 0.0188993</td>
+<td> 1.2459</td>
+<td> 5.00488</td>
+<td> 5.75716</td>
+<td> 1.5169</td>
+<td>-0.949</td>
+<td> 1.046</td>
+<td> 2.13849</td>
+<td> 3.52919</td>
+<td>-0.1999</td>
+<td> 4.80498</td>
+<td> 5.55726</td>
+<td> 1.317</td>
+<td> 0.75228</td>
+<td> 0.821489</td>
+<td> 2.21219</td>
+<td> 3.48798</td>
+<td> 4.24026</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.3199</td>
+<td> 4.51066</td>
+<td> 0.6529</td>
+<td> 6.14844</td>
+<td> 6.78242</td>
+<td> 2.3979</td>
+<td> 1.39118</td>
+<td> 3.19076</td>
+<td><img src='../imgs/image/033_235446.8-004418_K_thumbnail.png' alt=033_235446.8-004418_K_thumbnail.png>
+</td>
+<td>33</td>
+<td> 4.82854</td>
+<td> 5.46252</td>
+<td> 1.078</td>
+<td> 3.43736</td>
+<td> 4.07135</td>
+<td> 1.63778</td>
+<td> 2.27176</td>
+<td> 358.695</td>
+<td>-0.738259</td>
+<td> 0.667</td>
+<td> 5.49554</td>
+<td> 6.12952</td>
+<td> 1.745</td>
+<td> 1.0261</td>
+<td> 2.346</td>
+<td> 3.73718</td>
+<td> 5.53676</td>
+<td> 1.679</td>
+<td> 7.17454</td>
+<td> 7.80852</td>
+<td> 3.424</td>
+<td> 0.633984</td>
+<td> 0.313177</td>
+<td> 2.11276</td>
+<td> 3.75054</td>
+<td> 4.38452</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 2.54229</td>
+<td> 7.14029</td>
+<td> 1.35056</td>
+<td> 8.63029</td>
+<td> 9.60129</td>
+<td> 3.57029</td>
+<td> 2.961</td>
+<td> 4.598</td>
+<td><img src='../imgs/image/048_103716.6+021243_K_thumbnail.png' alt=048_103716.6+021243_K_thumbnail.png>
+</td>
+<td>48</td>
+<td> 6.088</td>
+<td> 7.059</td>
+<td> 1.028</td>
+<td> 3.127</td>
+<td> 4.098</td>
+<td> 1.49</td>
+<td> 2.461</td>
+<td> 159.319</td>
+<td> 2.21188</td>
+<td> 1.19173</td>
+<td> 7.27973</td>
+<td> 8.25073</td>
+<td> 2.21973</td>
+<td> 0.55771</td>
+<td> 3.1</td>
+<td> 6.061</td>
+<td> 7.698</td>
+<td> 1.90827</td>
+<td> 9.188</td>
+<td> 10.159</td>
+<td> 4.128</td>
+<td> 0.971</td>
+<td> 1.933</td>
+<td> 3.57</td>
+<td> 5.06</td>
+<td> 6.031</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.85239</td>
+<td> 7.17939</td>
+<td> 0.70933</td>
+<td> 8.60639</td>
+<td> 10.0574</td>
+<td> 2.87939</td>
+<td> 2.972</td>
+<td> 5.327</td>
+<td><img src='../imgs/image/050_113513.6+053308_K_thumbnail.png' alt=050_113513.6+053308_K_thumbnail.png>
+</td>
+<td>50</td>
+<td> 6.754</td>
+<td> 8.205</td>
+<td> 1.027</td>
+<td> 3.782</td>
+<td> 5.233</td>
+<td> 1.427</td>
+<td> 2.878</td>
+<td> 173.806</td>
+<td> 5.55222</td>
+<td> 1.14306</td>
+<td> 7.89706</td>
+<td> 9.34806</td>
+<td> 2.17006</td>
+<td> 0.57061</td>
+<td> 2.423</td>
+<td> 5.395</td>
+<td> 7.75</td>
+<td> 1.27994</td>
+<td> 9.177</td>
+<td> 10.628</td>
+<td> 3.45</td>
+<td> 1.451</td>
+<td> 1.945</td>
+<td> 4.3</td>
+<td> 5.727</td>
+<td> 7.178</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 2.16215</td>
+<td> 6.09415</td>
+<td> 0.85479</td>
+<td> 7.57215</td>
+<td> 8.67215</td>
+<td> 3.02515</td>
+<td> 1.902</td>
+<td> 3.932</td>
+<td><img src='../imgs/image/056_122057.4+094316_K_thumbnail.png' alt=056_122057.4+094316_K_thumbnail.png>
+</td>
+<td>56</td>
+<td> 5.41</td>
+<td> 6.51</td>
+<td> 0.863</td>
+<td> 3.508</td>
+<td> 4.608</td>
+<td> 1.478</td>
+<td> 2.578</td>
+<td> 185.239</td>
+<td> 9.72112</td>
+<td> 1.30736</td>
+<td> 6.71736</td>
+<td> 7.81736</td>
+<td> 2.17036</td>
+<td> 1.66885</td>
+<td> 3.831</td>
+<td> 5.733</td>
+<td> 7.763</td>
+<td> 2.52364</td>
+<td> 9.241</td>
+<td> 10.341</td>
+<td> 4.694</td>
+<td> 1.1</td>
+<td> 1.039</td>
+<td> 3.069</td>
+<td> 4.547</td>
+<td> 5.647</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.95793</td>
+<td> 6.40093</td>
+<td> 0.69354</td>
+<td> 8.31793</td>
+<td> 9.58893</td>
+<td> 2.52593</td>
+<td> 1.646</td>
+<td> 4.443</td>
+<td><img src='../imgs/image/058_125114.2+071552_K_thumbnail.png' alt=058_125114.2+071552_K_thumbnail.png>
+</td>
+<td>58</td>
+<td> 6.36</td>
+<td> 7.631</td>
+<td> 0.568</td>
+<td> 4.714</td>
+<td> 5.985</td>
+<td> 1.917</td>
+<td> 3.188</td>
+<td> 192.809</td>
+<td> 7.26445</td>
+<td> 1.26439</td>
+<td> 7.62439</td>
+<td> 8.89539</td>
+<td> 1.83239</td>
+<td> 1.15507</td>
+<td> 3.113</td>
+<td> 4.759</td>
+<td> 7.556</td>
+<td> 1.84861</td>
+<td> 9.473</td>
+<td> 10.744</td>
+<td> 3.681</td>
+<td> 1.271</td>
+<td> 1.078</td>
+<td> 3.875</td>
+<td> 5.792</td>
+<td> 7.063</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 1.63773</td>
+<td> 6.35073</td>
+<td> 1.10789</td>
+<td> 7.99673</td>
+<td> 9.09573</td>
+<td> 2.45173</td>
+<td> 1.851</td>
+<td> 4.713</td>
+<td><img src='../imgs/image/067_143921.0+113606_K_thumbnail.png' alt=067_143921.0+113606_K_thumbnail.png>
+</td>
+<td>67</td>
+<td> 6.359</td>
+<td> 7.458</td>
+<td> 0.814</td>
+<td> 4.508</td>
+<td> 5.607</td>
+<td> 1.646</td>
+<td> 2.745</td>
+<td> 219.837</td>
+<td> 11.6015</td>
+<td> 0.52984</td>
+<td> 6.88884</td>
+<td> 7.98784</td>
+<td> 1.34384</td>
+<td> 1.01727</td>
+<td> 2.655</td>
+<td> 4.506</td>
+<td> 7.368</td>
+<td> 2.12516</td>
+<td> 9.014</td>
+<td> 10.113</td>
+<td> 3.469</td>
+<td> 1.099</td>
+<td> 1.037</td>
+<td> 3.899</td>
+<td> 5.545</td>
+<td> 6.644</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 3.34418</td>
+<td> 8.96518</td>
+<td> 1.64356</td>
+<td> 10.8652</td>
+<td> 12.0392</td>
+<td> 4.33018</td>
+<td> 3.102</td>
+<td> 5.621</td>
+<td><img src='../imgs/image/074_150351.2+121148_K_thumbnail.png' alt=074_150351.2+121148_K_thumbnail.png>
+</td>
+<td>74</td>
+<td> 7.521</td>
+<td> 8.695</td>
+<td> 0.986</td>
+<td> 4.419</td>
+<td> 5.593</td>
+<td> 1.9</td>
+<td> 3.074</td>
+<td> 225.963</td>
+<td> 12.1967</td>
+<td> 1.70062</td>
+<td> 9.22162</td>
+<td> 10.3956</td>
+<td> 2.68662</td>
+<td> 0.61382</td>
+<td> 3.958</td>
+<td> 7.06</td>
+<td> 9.579</td>
+<td> 2.25738</td>
+<td> 11.479</td>
+<td> 12.653</td>
+<td> 4.944</td>
+<td> 1.174</td>
+<td> 2.116</td>
+<td> 4.635</td>
+<td> 6.535</td>
+<td> 7.709</td>
+</tr>
+<tr>
+<td class='table_label'>1</td>
+<td class='table_pred_ok'>1</td>
+<td> 2.016</td>
+<td> 5.782</td>
+<td> 1.46</td>
+<td> 6.933</td>
+<td> 7.863</td>
+<td> 2.483</td>
+<td> 1.329</td>
+<td> 3.766</td>
+<td><img src='../imgs/image/084_004331.4-001527_K_thumbnail.png' alt=084_004331.4-001527_K_thumbnail.png>
+</td>
+<td>84</td>
+<td> 4.917</td>
+<td> 5.847</td>
+<td> 0.467</td>
+<td> 3.588</td>
+<td> 4.518</td>
+<td> 1.151</td>
+<td> 2.081</td>
+<td> 10.8811</td>
+<td>-0.257535</td>
+<td> 0.556</td>
+<td> 5.473</td>
+<td> 6.403</td>
+<td> 1.023</td>
+<td> 2.185</td>
+<td> 4.201</td>
+<td> 5.53</td>
+<td> 7.967</td>
+<td> 3.645</td>
+<td> 9.118</td>
+<td> 10.048</td>
+<td> 4.668</td>
+<td> 0.93</td>
+<td> 0.862</td>
+<td> 3.299</td>
+<td> 4.45</td>
+<td> 5.38</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class='container content_div'>
+<div class='row'>
+<div>
+<p>For the following 3 samples, the predicted classifications are incorrect:</p>
+</div>
+</div>
+</div>
+<div class='table-responsive container content_div'>
+<div class='row'>
+<div>
+<table class='table'>
+<tr class='table_head_grey'>
+<th>Label</th>
+<th>Prediction</th>
+<th>gi</th>
+<th>gk</th>
+<th>gr</th>
+<th>gw1</th>
+<th>gw2</th>
+<th>gz</th>
+<th>ij</th>
+<th>ik</th>
+<th>image</th>
+<th>index</th>
+<th>iw1</th>
+<th>iw2</th>
+<th>iz</th>
+<th>jw1</th>
+<th>jw2</th>
+<th>kw1</th>
+<th>kw2</th>
+<th>petroR50_g</th>
+<th>petroR50_r</th>
+<th>ri</th>
+<th>rw1</th>
+<th>rw2</th>
+<th>rz</th>
+<th>ug</th>
+<th>ui</th>
+<th>uj</th>
+<th>uk</th>
+<th>ur</th>
+<th>uw1</th>
+<th>uw2</th>
+<th>uz</th>
+<th>w1w2</th>
+<th>zj</th>
+<th>zk</th>
+<th>zw1</th>
+<th>zw2</th>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_bad'>1</td>
+<td> 1.975</td>
+<td> 5.13</td>
+<td> 1.209</td>
+<td> 5.762</td>
+<td> 6.505</td>
+<td> 2.296</td>
+<td> 1.342</td>
+<td> 3.155</td>
+<td><img src='../imgs/image/040_092035.2+062152_K_thumbnail.png' alt=040_092035.2+062152_K_thumbnail.png>
+</td>
+<td>40</td>
+<td> 3.787</td>
+<td> 4.53</td>
+<td> 0.321</td>
+<td> 2.445</td>
+<td> 3.188</td>
+<td> 0.632</td>
+<td> 1.375</td>
+<td> 140.147</td>
+<td> 6.36458</td>
+<td> 0.765999</td>
+<td> 4.553</td>
+<td> 5.296</td>
+<td> 1.087</td>
+<td> 6.11</td>
+<td> 8.085</td>
+<td> 9.427</td>
+<td> 11.24</td>
+<td> 7.319</td>
+<td> 11.872</td>
+<td> 12.615</td>
+<td> 8.406</td>
+<td> 0.743</td>
+<td> 1.021</td>
+<td> 2.834</td>
+<td> 3.466</td>
+<td> 4.209</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_bad'>1</td>
+<td> 0.77</td>
+<td> 5.227</td>
+<td> 0.0</td>
+<td> 6.824</td>
+<td> 8.055</td>
+<td> 1.234</td>
+<td> 2.585</td>
+<td> 4.457</td>
+<td><img src='../imgs/image/069_144141.1+110853_K_thumbnail.png' alt=069_144141.1+110853_K_thumbnail.png>
+</td>
+<td>69</td>
+<td> 6.054</td>
+<td> 7.285</td>
+<td> 0.464</td>
+<td> 3.469</td>
+<td> 4.7</td>
+<td> 1.597</td>
+<td> 2.828</td>
+<td> 220.421</td>
+<td> 11.1477</td>
+<td> 0.77</td>
+<td> 6.824</td>
+<td> 8.055</td>
+<td> 1.234</td>
+<td> 2.471</td>
+<td> 3.241</td>
+<td> 5.826</td>
+<td> 7.698</td>
+<td> 2.471</td>
+<td> 9.295</td>
+<td> 10.526</td>
+<td> 3.705</td>
+<td> 1.231</td>
+<td> 2.121</td>
+<td> 3.993</td>
+<td> 5.59</td>
+<td> 6.821</td>
+</tr>
+<tr>
+<td class='table_label'>0</td>
+<td class='table_pred_bad'>1</td>
+<td> 1.79989</td>
+<td> 6.34889</td>
+<td> 0.92932</td>
+<td> 7.84789</td>
+<td> 8.66089</td>
+<td> 2.51889</td>
+<td> 2.41</td>
+<td> 4.549</td>
+<td><img src='../imgs/image/079_152147.0-021337_K_thumbnail.png' alt=079_152147.0-021337_K_thumbnail.png>
+</td>
+<td>79</td>
+<td> 6.048</td>
+<td> 6.861</td>
+<td> 0.719</td>
+<td> 3.638</td>
+<td> 4.451</td>
+<td> 1.499</td>
+<td> 2.312</td>
+<td> 230.446</td>
+<td>-2.22688</td>
+<td> 0.87057</td>
+<td> 6.91857</td>
+<td> 7.73157</td>
+<td> 1.58957</td>
+<td> 1.48411</td>
+<td> 3.284</td>
+<td> 5.694</td>
+<td> 7.833</td>
+<td> 2.41343</td>
+<td> 9.332</td>
+<td> 10.145</td>
+<td> 4.003</td>
+<td> 0.813</td>
+<td> 1.691</td>
+<td> 3.83</td>
+<td> 5.329</td>
+<td> 6.142</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<br>
+
+  <br><br>
+
+  <footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

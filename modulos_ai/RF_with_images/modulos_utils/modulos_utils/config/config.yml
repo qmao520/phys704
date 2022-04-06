@@ -1,0 +1,8 @@
+# (C) Modulos AG (2019-2022). All rights reserved.
+#
+# Configuration file for the modulos_utils package.
+#
+# Using this config you can set the following:
+#     - AUTOMATIC_DATETIME_HEURISTIC_ON - Enable the automatic detection of
+#                                         datetime nodes.
+AUTOMATIC_DATETIME_HEURISTIC_ON: true

@@ -1,0 +1,161 @@
+<!-- (C) Modulos AG (2019-2022). All rights reserved. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="src/readme/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="src/readme/styles.css">
+  <script src="src/readme/jquery-3.6.0.slim.min.js"></script>
+  <script src="src/readme/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="base_div">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="README.html">
+          <img src="src/readme/logo.svg" height="33" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link larger_text" href="README.html">Info<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link larger_text" href="src/readme/Report.html">Insights</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle larger_text" href="src/readme/solution_deployment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Installation & Deployment
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="src/readme/solution_deployment.html">Overview</a>
+                <a class="dropdown-item" href="src/readme/solution_deployment_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                <a class="dropdown-item" href="src/readme/solution_deployment_rest_api_native.html">Native REST API</a>
+                <a class="dropdown-item" href="src/readme/solution_deployment_rest_api_docker.html">Dockerized REST API</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle larger_text" href="src/readme/solution_api.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="src/readme/solution_api.html">Overview</a>
+                  <a class="dropdown-item" href="src/readme/solution_api_python_scripts.html">Python scripts & Jupyter Notebook</a>
+                  <a class="dropdown-item" href="src/readme/solution_api_rest_api.html">REST API</a>
+                  <a class="dropdown-item" href="src/readme/solution_clients.html">Example clients</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                   href="src/readme/solution_package_description.html">Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link larger_text"
+                    href="src/readme/solution_contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<div class="container content_div">
+    <div class="row">
+      <div>
+    <h2>Solutions Readme</h2>
+    <p>This Solutions README is designed to assist you in deploying a machine learning solution
+       that was created with the Modulos AutoML platform. It contains information on currently
+       supported deployment options and the structure of a packaged solution.
+    </p>
+    <ul>
+        <li><a href="src/readme/Report.html">Solution Insights</a></li>
+        <li><a href="src/readme/solution_deployment.html">Installation & deployment</a></li>
+        <li><a href="src/readme/solution_api.html">APIs</a></li>
+        <li><a href="src/readme/solution_package_description.html"> Solution package description</a></li>
+        <li><a href="src/readme/solution_contact.html"> Contact</a></li>
+    </ul>
+    <h2>Workflow Info</h2>
+<table class="table">
+    <tr>
+		<td>Dataset name</td>
+		<td>train_qso_wo_image_2802822c</td>
+	</tr>
+    <tr>
+        <td>Dataset description</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Removed nodes (Zero variance)</td>
+        <td></td>
+    </tr>
+	<tr>
+		<td>Workflow name</td>
+		<td>workflow_c61bb6b6</td>
+	</tr>
+    <tr>
+        <td>Worfklow description</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Problem type</td>
+        <td>Classification</td>
+    </tr>
+    <tr>
+        <td>Categories</td>
+        <td>[0, 1]</td>
+    </tr>
+    <tr>
+        <td>Objective name</td>
+        <td>Accuracy</td>
+    </tr>
+    <tr>
+        <td>Best score type</td>
+        <td>maximization</td>
+    </tr>
+</table>
+
+<h2>Solution Info</h2>
+<table class="table">
+	<tr>
+		<td>Feature extractor name</td>
+		<td>Identity transformation</td>
+    </tr>
+    <tr>
+        <td>Feature extractor config choice</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Model</td>
+		<td>Random forest</td>
+    </tr>
+    <tr>
+        <td>Model config choice</td>
+		<td>n_estimators: 914 <br/>log_min_samples_leaf: -4.035e+00 <br/>criterion: gini <br/>max_features: log2 <br/>class_weight: balanced_subsample <br/></td>
+	</tr>
+    <tr>
+        <td>Validation score</td>
+        <td>0.9230769230769231</td>
+    </tr>
+</table>
+<h2>Terms and Conditions</h2>
+<p>
+    This Solution is provided to you without any licensing restrictions on the 
+    part of Modulos AG subject to the liability limitations in our Terms and Conditions. 
+    If you trained this Solution using data subject to third party license and/or copyright 
+    restrictions, then these restrictions may apply to the parameters or weights of 
+    the model in the Solution.
+</p>
+<br><br>
+</div>
+</div>
+</div>
+<footer>
+    <p>© Modulos AG 2019-2022. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
